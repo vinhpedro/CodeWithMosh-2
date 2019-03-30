@@ -1,3 +1,7 @@
-// Ex. 2 Factory and Constructor Functions
-console.log("Exercise 1 - []:");
+// Ex. 1 Array from Range
+console.log("Exercise 1 - Array from Range:");
+
+
+
+
 

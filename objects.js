@@ -1,6 +1,7 @@
 // Lessons on Objects with codewithmosh
 
 // Ex. 1 Address Object
+console.log("Exercise 1 - Address Object:");
 
 const address = {
     street: '1 Mount Saint Nicholas',
@@ -18,6 +19,8 @@ showAddress(address);
 // ____________________________________
 
 // Ex. 2 Factory and Constructor Functions
+console.log("Exercise 2 - Factory and Constructor Functions:");
+
 
 let addressFactoryFunction = createAddress('a', 'b', 'c');
 let addressConstructor = new addressTwo('1', '2', '3');
@@ -45,6 +48,9 @@ function addressTwo(street, city, zipCode) {
 // ____________________________________
 
 // Ex. 3 Object Equality
+console.log("Exercise 3 - Object Equality:");
+
+// This talks to addressTwo function from exercise 2
 
 let compAddress1 = new addressTwo('a', 'b', 'c');
 let compAddress2 = new addressTwo('a', 'b', 'c');
@@ -65,3 +71,48 @@ function areSame(compAddress1, compAddress2){
 
 console.log(areEqual(compAddress1, compAddress2));
 console.log(areSame(compAddress1, compAddress2));
+
+// ____________________________________
+
+// Ex. 3 Blog Post Object
+console.log("Exercise 4 - Blog Post Object:");
+
+/* 
+    title
+    body
+    author
+    views
+    comments
+        (author, body)
+    isLive
+*/
+
+const blogPost = {
+    title: "Does my bum look big in this?",
+    body: "I think it does for the following reasons...",
+    author: "Trevor Power",
+    views: 2376,
+    comments: [{
+        author: "John Doe",
+        body: "I think you look great!"
+    }],
+    isLive: true
+}
+
+console.log(blogPost);
+
+// ____________________________________
+
+// Ex. 4 Constructor Function
+console.log("Exercise 4 - Constructor Function:");
+
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
+
+console.log(Post("Hello", "I am Trev", "Trev"));

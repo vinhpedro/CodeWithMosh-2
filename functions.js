@@ -1,3 +1,7 @@
 // Lessons on Functions with codewithmosh
 
-console.log("Functions");
+//________________________
+
+console.log("Functions Exercises: ");
+
+console.log("Exercise 1");

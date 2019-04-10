@@ -2,6 +2,5 @@
 
 //________________________
 
-console.log("Functions Exercises: ");
-
-console.log("Exercise 1");
+// Example
+console.log("Test");
